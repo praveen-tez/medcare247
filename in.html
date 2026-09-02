@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medcare247 | Smart Hospital Management System</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-pattern {
+      background-image: radial-gradient(circle at 2px 2px, rgba(239, 68, 68, 0.05) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-900 selection:bg-red-100 selection:text-red-900 hero-pattern">
+
+<!-- ================= Utility Bar ================= -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <span class="flex-center">
+        <span class="status-dot"></span>
+        <span>99.9% Uptime Cloud Solution</span>
+      </span>
+      <span class="hidden-mobile">Product Reg: INI/AP/3662</span>
+    </div>
+    <div class="utility-right">
+      <span class="lowercase-text">medcaresales@visualintegra.com</span>
+      <span>+91 8019366705</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= Navbar ================= -->
+<nav class="navbar glass">
+  <div class="container nav-inner">
+    <div class="logo-wrapper">
+      <img src="assets/logo.png" class="logo" alt="Medcare247 Logo" loading="lazy">
+    </div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#ecosystem">Platform</a>
+      <a href="#modules">Modules</a>
+      <a href="#glimpse">Product Glimpse</a>
+      <a href="#pricing">Pricing</a>
+      <button class="btn-launch" onclick="document.getElementById('portal-modal').classList.remove('hidden')">Launch Portal</button>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+      <svg id="menu-open" class="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+      <svg id="menu-close" class="icon-menu hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu hidden">
+  <div class="mobile-menu-inner">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#ecosystem" onclick="closeMenu()">Platform</a>
+    <a href="#modules" onclick="closeMenu()">Modules</a>
+    <a href="#glimpse" onclick="closeMenu()">Product Glimpse</a>
+    <a href="#pricing" onclick="closeMenu()">Pricing</a>
+    <button class="btn-launch" onclick="closeMenu(); document.getElementById('portal-modal').classList.remove('hidden')">Launch Portal</button>
+  </div>
+</div>
+
+<!-- ================= Hero ================= -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="badge-red">Smart Hospital Management System</div>
+      <h1 class="hero-title">
+        Simple, Smart, <br />
+        <span class="text-gradient">Reliable Cloud.</span>
+      </h1>
+      <p class="hero-subtext">
+        Medcare247 is an end-to-end digital triage system enabling trusts to bypass workforce gaps and
+        create efficient solutions for patient care.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-main-red">Explore Platform</button>
+        <button class="btn-main-outline">Watch Walkthrough</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="absolute-blur"></div>
+      <img loading="lazy" src="assets/01.png" alt="Medcare247 Dashboard">
+    </div>
+  </div>
+</header>
+
+<!-- ================= About ================= -->
+<section id="about" class="section-padding bg-slate-50 border-y">
+  <div class="container about-flex">
+    <div class="about-info">
+      <span class="label-red">Product Vision</span>
+      <h2 class="title-h2">Replace manual, paper-based systems with automated efficiency.</h2>
+      <div class="space-y-6">
+        <p class="text-slate-600 text-lg leading-relaxed">
+          Medcare247 aims at <strong>standardizing and consolidating data</strong> to ensure total integrity and reduce inconsistencies. Our platform automates the management of hospital resources, personal history, and schedules efficiently.
+        </p>
+        <p class="text-slate-600 text-lg leading-relaxed">
+          Designed for any hospital institution to acquire, manage, and timely retrieve great volumes of information in a cost-effective manner.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-cards">
+      <div class="feature-card">
+        <h4 class="font-black text-xl mb-4">99.9% Uptime</h4>
+        <p class="text-sm text-slate-400">Reliable cloud solution accessible from anywhere in the world.</p>
+      </div>
+      <div class="feature-card">
+        <h4 class="font-black text-xl mb-4">Cost-Wise</h4>
+        <p class="text-sm text-slate-400">Institution's resources effectively utilized through smart automation.</p>
+      </div>
+      <div class="feature-card">
+        <h4 class="font-black text-xl mb-4">Multi-Scale</h4>
+        <p class="text-sm text-slate-400">Suitable for small clinics, mid-size, and large-scale hospital networks.</p>
+      </div>
+      <div class="feature-card">
+        <h4 class="font-black text-xl mb-4">Live Support</h4>
+        <p class="text-sm text-slate-400">Always available team for assistance and system optimization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Ecosystem ================= -->
+<section id="ecosystem" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-24">
+      <h2 class="title-h2">One Platform. All Devices.</h2>
+      <p class="text-slate-500 text-lg">Platform is a package of three powerful applications.</p>
+    </div>
+
+    <div class="ecosystem-grid">
+      <div class="eco-card">
+        <div class="icon-box icon-blue">
+          <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9-9H3m9 9V3m0 9L3 3"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-black mb-4">Medcare247 Web</h3>
+        <p class="text-slate-500 mb-8">Central hub for Hospitals and Pharmacies. In-house management with full administrative control.</p>
+        <ul class="space-y-3 text-xs font-bold text-slate-400 uppercase tracking-widest">
+          <li>• Angular / C# Architecture</li>
+          <li>• Multi-Role Support</li>
+          <li>• SQL Data Consolidation</li>
+        </ul>
+      </div>
+
+      <div class="eco-card featured-red">
+        <div class="icon-box icon-white">
+          <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-black mb-4">Patient Mobile App</h3>
+        <p class="text-red-100 mb-8">Registration, Appointments, Prescriptions, and Billing access directly for the patient.</p>
+        <ul class="space-y-3 text-xs font-bold text-red-200 uppercase tracking-widest">
+          <li>• Real-time Triage</li>
+          <li>• Personal Health Record</li>
+          <li>• Instant Billing View</li>
+        </ul>
+      </div>
+
+      <div class="eco-card">
+        <div class="icon-box icon-teal">
+          <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-black mb-4">Doctor Mobile App</h3>
+        <p class="text-slate-500 mb-8">Built to ease work for doctors. Focus on service while the app manages your consultations.</p>
+        <ul class="space-y-3 text-xs font-bold text-slate-400 uppercase tracking-widest">
+          <li>• Consultation Queues</li>
+          <li>• Eased Triage Logic</li>
+          <li>• Secure History Access</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Modules ================= -->
+<section id="modules" class="section section-padding" style="background: var(--slate-900); color: white;">
+  <div class="container modules-flex">
+    <div class="modules-intro">
+      <h2 class="title-h2">Comprehensive <br />Module Package.</h2>
+      <p class="text-slate-400 leading-relaxed mb-10">A complete ecosystem covering every department of a modern medical facility.</p>
+      <div class="tech-stack">
+        <p class="tech-label">Technology Stack</p>
+        <div class="tech-badges">
+          <span class="tech-badge">ANGULAR</span>
+          <span class="tech-badge">C# .NET</span>
+          <span class="tech-badge">SQL SERVER</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modules-grid">
+      <div class="module-item">
+        <div class="module-num">1</div>
+        <span class="font-bold text-lg">Clinical Management</span>
+      </div>
+      <div class="module-item">
+        <div class="module-num">2</div>
+        <span class="font-bold text-lg">Billing & Invoicing</span>
+      </div>
+      <div class="module-item">
+        <div class="module-num">3</div>
+        <span class="font-bold text-lg">Pharmacy Module</span>
+      </div>
+      <div class="module-item">
+        <div class="module-num">4</div>
+        <span class="font-bold text-lg">Radiology Management</span>
+      </div>
+      <div class="module-item">
+        <div class="module-num">5</div>
+        <span class="font-bold text-lg">Pathology Lab</span>
+      </div>
+      <div class="module-item">
+        <div class="module-num">6</div>
+        <span class="font-bold text-lg">In-Patient Care</span>
+      </div>
+      <div class="module-item span-2">
+        <div class="module-num">7</div>
+        <span class="font-bold text-lg">Reporting & Analytics</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Product Glimpse ================= -->
+<section id="glimpse" class="section-padding bg-slate-50">
+  <div class="container">
+    <div class="glimpse-header">
+      <div>
+        <h2 class="title-h2 uppercase">Product Glimpse</h2>
+        <p class="text-slate-500">Visual representations from the Medcare247 platform.</p>
+      </div>
+      <div id="mockup-nav" class="tabs flex-wrap gap-2"></div>
+    </div>
+
+    <div class="preview-card">
+      <div class="preview-header">
+        <span id="preview-title" class="preview-title">Clinical Management</span>
+        <span class="preview-label">Admin User</span>
+      </div>
+      <div class="preview-body">
+        <img loading="lazy" id="preview-image" src="assets/products/admin.png" alt="Product Preview">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Pricing ================= -->
+<section id="pricing" class="section-padding border-y">
+  <div class="container">
+    <div class="text-center mb-16">
+      <h2 class="title-h2">Products & Pricing Plans</h2>
+      <p class="text-slate-500 text-lg max-w-2xl mx-auto">Our product pricing is categorized into 4 plans. Prices to fit every organisation.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Card 1 -->
+      <div class="pricing-card">
+        <div class="pricing-icon-wrapper">
+          <svg class="pricing-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <!-- Clinic Building -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M12 11v4M10 13h4" />
+          </svg>
+        </div>
+        <h3 class="pricing-title">Limited Clinic</h3>
+        <div class="pricing-divider"></div>
+        <p class="access-text">access for</p>
+        <h4 class="users-text">Limited Features</h4>
+        <p class="billing-text">monthly @</p>
+        <h2 class="price-text">Rs. 3,000/-</h2>
+        <div class="pricing-divider"></div>
+        <p class="desc-text">Best suited for individual practitioners or for evaluating the platform.</p>
+        <button class="btn-pricing">Get Started</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="pricing-card">
+        <div class="pricing-icon-wrapper">
+          <svg class="pricing-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <!-- Clinic + Pharmacy Pill -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h12M5 21V7l6-4 6 4v14" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 11v4M9 13h4" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.5 13.5l3 3a2.121 2.121 0 01-3 3l-3-3a2.121 2.121 0 013-3z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 15.5l5 5" />
+          </svg>
+        </div>
+        <h3 class="pricing-title">Limited Clinic<br>with Pharmacy</h3>
+        <div class="pricing-divider"></div>
+        <p class="access-text">access for</p>
+        <h4 class="users-text">Pharmacy Included</h4>
+        <p class="billing-text">monthly @</p>
+        <h2 class="price-text">Rs. 5,000/-</h2>
+        <div class="pricing-divider"></div>
+        <p class="desc-text">Suited for small standalone clinics with a minimal number of staff.</p>
+        <button class="btn-pricing">Get Started</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="pricing-card">
+        <div class="pricing-icon-wrapper">
+          <svg class="pricing-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <!-- Clinic + Premium Stars (Unlimited) -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M12 11v4M10 13h4" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 6l1-1m-1 1l-1 1m1-1v1.5m0-1.5h-1.5M4 9l1-1m-1 1l-1 1m1-1v1.5m0-1.5H2.5" />
+          </svg>
+        </div>
+        <h3 class="pricing-title">Unlimited Clinic<br>with Pharmacy</h3>
+        <div class="pricing-divider"></div>
+        <p class="access-text">access for</p>
+        <h4 class="users-text">Unlimited Features</h4>
+        <p class="billing-text">monthly @</p>
+        <h2 class="price-text">Rs. 8,000/-</h2>
+        <div class="pricing-divider"></div>
+        <p class="desc-text">Matched to basic hospitals which have a limited number of staff.</p>
+        <button class="btn-pricing">Get Started</button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="pricing-card">
+        <div class="pricing-icon-wrapper">
+          <svg class="pricing-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <!-- Large Hospital with Wings -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M7 21V5a2 2 0 012-2h6a2 2 0 012 2v16M4 21v-8h3M17 21v-8h3" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v4M10 9h4" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 16h4 M10 18h4" />
+          </svg>
+        </div>
+        <h3 class="pricing-title">Hospital with<br>In Patient Care</h3>
+        <div class="pricing-divider"></div>
+        <p class="access-text">access for</p>
+        <h4 class="users-text">Full System</h4>
+        <p class="billing-text">yearly @</p>
+        <h2 class="price-text">Rs. 1 Lakh/-</h2>
+        <div class="pricing-divider"></div>
+        <p class="desc-text">For organisations operating multi-speciality or more than a single hospital.</p>
+        <button class="btn-pricing">Get Started</button>
+      </div>
+    </div>
+    <div class="pricing-info-box">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+      <p>All users with any of the above subscriptions get to use the core modules of the platform.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Mobile App Showcase ================= -->
+<section id="mobile" class="section-padding mobile-showcase">
+  <div class="container mobile-showcase-wrapper">
+    <div class="mobile-text">
+      <h3 class="title-h2 text-white">Healthcare in <br />your pocket.</h3>
+      <p class="text-red-100 text-lg mb-12 max-w-lg">Dedicated apps for Patients (to manage appointments & billing) and Doctors (to view history and triage remotely).</p>
+
+      <div class="app-download-buttons">
+        <div class="app-button">
+          <div class="text-left">
+            <p class="text-[10px] uppercase font-bold opacity-60">Get it on</p>
+            <p class="text-lg font-bold">App Store</p>
+          </div>
+        </div>
+        <div class="app-button">
+          <div class="text-left">
+            <p class="text-[10px] uppercase font-bold opacity-60">Download from</p>
+            <p class="text-lg font-bold">Play Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Phones -->
+    <div class="phone-mockup">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <img loading="lazy" src="assets/login.png" alt="Mobile App">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="col-span-2">
+        <div class="footer-logo-row">
+          <div class="footer-icon">+</div>
+          <h1 class="text-2xl font-black tracking-tight">MEDCARE247</h1>
+        </div>
+        <p class="text-slate-400 max-w-sm mb-10 leading-relaxed">A modern hospital management ecosystem by Visual Integra Solutions, empowering thousands of healthcare providers worldwide.</p>
+      </div>
+      <div>
+        <h5 class="text-lg font-bold mb-6">Contact</h5>
+        <p class="text-slate-400 mb-2">medcaresales@visualintegra.com</p>
+        <p class="text-slate-400">+91 8019366705</p>
+      </div>
+      <div>
+        <h5 class="text-lg font-bold mb-6">Location</h5>
+        <p class="text-slate-400 leading-relaxed">Unit 402, Amrutha Sai, Manikonda, Hyderabad - 500089</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Visual Integra Solutions. All rights reserved.</p>
+      <div class="flex gap-8">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Portal Simulation Modal -->
+<div id="portal-modal" class="hidden modal">
+  <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="document.getElementById('portal-modal').classList.add('hidden')"></div>
+  <div class="modal-content">
+    <h3 class="text-2xl font-black text-slate-900 mb-2 text-center">HMS Login Portal</h3>
+    <p class="text-slate-400 text-center mb-10">Select your destination app</p>
+    <div class="space-y-4">
+      <button class="modal-button">
+        <div class="modal-button-content">
+          <div class="modal-button-icon red">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <span class="font-bold text-slate-700">Hospital Web App</span>
+        </div>
+        <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      </button>
+      <button class="modal-button">
+        <div class="modal-button-content">
+          <div class="modal-button-icon teal">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <span class="font-bold text-slate-700">Patient Dashboard</span>
+        </div>
+        <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      </button>
+    </div>
+    <button onclick="document.getElementById('portal-modal').classList.add('hidden')" class="w-full mt-12 py-3 text-slate-400 font-bold hover:text-slate-900 transition-colors">Cancel</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
